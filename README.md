@@ -47,10 +47,6 @@ To achieve the goal of automatically linking Feedly articles,or at least suggest
 * In the absence of extensive labeled data “best judgement” should be used to identify reasonable cutoffs for suggesting a match. This logic may be clarified after initial similarity metrics are calculated and the results are examined. The smaller labeled test sets can be used to compare performance of different methods. 
 * Identify how many potential matches to provide for review. 
 
-**Output**
-* The articles may then be grouped into specific “buckets” for dissemination to relevant IAP staff for final review. 
-* Data should be machine readable unless IAP specifically requests text based output (automated report)
-
 **Stretch Goals**
 * Method for determining which articles have not been reviewed yet
 Assuming this is run each day - we need to be able to constrain to only new articles, maybe this is based on the timestamp of the last run ? or some other constraint. 
