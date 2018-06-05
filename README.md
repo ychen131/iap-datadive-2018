@@ -5,15 +5,15 @@ For more information see [Project Brief](https://docs.google.com/document/d/1r0n
 
 ## Data 
 1. Feedly Data: Prior to DD we need to extract a large sample of feedly articles, see the 'Notebooks/Feedly_Extaction_Demo.ipynb' for starter code for this. File also includes the API token.  
-    * The Feedly API allows for easy programmatic extraction of articles. They appear to limit individual “pulls” to 1000 items, but it also appears there are methods for retrieving older information. The actual IAP feed is relatively new and only contains around 500 articles, so the 1000 limit may be irrelevant. DataKind will generate a large sample of historical Feedly records.
+    * The Feedly API allows for easy programmatic extraction of articles. They appear to limit individual “pulls” to 1000 items, but it also appears there are methods for retrieving older information. The actual IAP feed is relatively new and only contains around 500 articles, so the 1000 limit may be irrelevant. 
 2. EWS Data (Project Descriptions and MetaData):  This data should include all information related to project description.
     * This is the master project list that we can match articles to. 
     * ALSO: this dataset has project descriptions, etc that have been labeled with IAP Tags, this data could be used to help in assignment of tags to news articles. 
 3. IAP Tag List
     * DataKind will work with IAP to build a list of “Tags” which may be useful for automatically stratifying news articles into specific groups.  In addition to the tags - we would require some logic for tags if they are communicating “higher level”  classification (oil, gas, coal → Energy extraction)
-4. Article -> Article with Tags
+4. Article -> Article with Tags (Labeled Data)
     * DataKind and IAP will coordinate the development of small “test” datasets that volunteers can use to measure performance of tools. Ideally we would have around 100 articles labled with IAP Tags. 
-5. Article -> Relevant Project 
+5. Article -> Relevant Project (Labeled Data)
     * DataKind and IAP will coordinate the development of small “test” datasets that volunteers can use to measure performance of tools. Ideally we would have around 100 articles manually matched to projects.
 
 
