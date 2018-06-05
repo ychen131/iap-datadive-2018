@@ -36,7 +36,6 @@ To achieve the goal of automatically linking Feedly articles,or at least suggest
 * Write code to automatically assign IAP determined tags to articles, current priority tags are: Country, Bank, Sector. 
 * Some tags may simply be extracted based on the presence in the text, but other tags may be related to a more complex system of items, such as {oil, coal, mining}  may be related to a tag of “Energy Extraction”
 * Transfer Learning  could potentially be applied to this problem but using the database of projects with tags and summaries to build a model that assigns tags to the news articles
-* Identify reasonable cutoff metrics for suggesting a potential match
 * Determine how many potential matches to provide per de-duplicated article (perhaps just 2 projects) 
 
 
