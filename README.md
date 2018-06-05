@@ -33,18 +33,22 @@ To achieve the goal of automatically linking Feedly articles,or at least suggest
 * Tag with language - currently project information is in English so parsing articles in other languages in unnecessary - but tagging with language, sector and country would still be useful. (If possible - low priority)
 
 **Tag Feedly Articles**
+* Write code to automatically assign IAP determined tags to articles, tags may include the country of project, the sector of the project etc. 
+* Some tags may simply be extracted based on the presence in the text, but other tags may be related to a more complex system of items, such as {oil, coal, mining}  may be related to a tag of “Energy Extraction”
+* Transfer Learning  could potentially be applied to this problem but using the database of projects with tags and summaries to build a model that assigns tags to the news articles
+* Identify reasonable cutoff metrics for suggesting a potential match
+* Determine how many potential matches to provide per de-duplicated article (perhaps just 2 projects) 
 
-* Write code to automatically assign IAP determined tags to projects, tags may include the country of project, the sector of the project etc. 
-* Some tags may simply be extracted based on the presence in the text, but other tags may be related to a more complex system of items, such as {oil, coal, mining}  may be related to a tag of “Energy Extraction” 
-* Transfer Learning could potentially be applied to this problem but using the database of projects with tags and summaries to build a model that assigns tags to the news articles
+
+**Match to Projects**
+* Filter projects (those that we search for being a match) based on some logical criteria, Perhaps related to tags (country, sector, city, etc) 
+    - * Date/Status of project: Using data included in the EWS data, and the featurized Feedly data - Filter potential projects to those that are still active, would it be likely that a news article is being written about this project at this time, etc. 
 * Generate Similarity Score Between Articles and Relevant Projects
-* Filter projects based on some logical criteria, Perhaps related to tags (country, sector, city, etc)
-* Date/Status of project: Using data included in the EWS data, and the featurized Feedly data - Filter potential projects to those that are still active, would it be likely that a news article is being written about this project at this time, etc. 
 * Identify reasonable cutoff metrics for suggesting a potential match
 * In the absence of extensive labeled data “best judgement” should be used to identify reasonable cutoffs for suggesting a match. This logic may be clarified after initial similarity metrics are calculated and the results are examined. The smaller labeled test sets can be used to compare performance of different methods. 
 * Identify how many potential matches to provide for review. 
-* Subset and Output Processed Data
-* Determine how many potential matches to provide per de-duplicated article (perhaps just 2 projects) 
+
+**Output**
 * The articles may then be grouped into specific “buckets” for dissemination to relevant IAP staff for final review. 
 * Data should be machine readable unless IAP specifically requests text based output (automated report)
 
