@@ -93,7 +93,7 @@ published        : date article was published
 title            : Title of article as provided by the feedly API
 url              : url of article 
 feed_label       : Label of the Feedly Feed (created by IAP)
-ProjectNumber    : Project ID number in EWS System (LINKING FIELD)
+ProjectNumber    : Project ID number in EWS System (LINKING FIELD) - CAN BE MULTIPLE PROJECTS 
 EWS Project Name : Project Name in EWS System
 EWS hyperlink    : Link to Project in EWS System
 Matched          : !IMPORTANT! Indicates if project is matched to article, 1 = match exists, 0 article has no \
