@@ -4,6 +4,8 @@ Repo for IAP (International Accountability Project) DataDive Project.
 For more information see [Project Page](https://docs.google.com/document/d/1CpjzlksRqPjthfxRK5zENBCcNMRXS9hnTb5S_-WHSr0/edit?ts=5b294a34#heading=h.2gyhe3cbh4ek)
 
 ## Data 
+**Also See [Data Dictionary](https://github.com/datakind/iap-datadive-scoping/blob/master/Data_Dictionary.md) **
+
 1. **News Article Data --> `Data/Feedly_Processed_DF_cleaned...`**
     * The news article data has been extracted from Feedly ( a news aggregator application) used by IAP to collect articles realted to specific search terms they have created. This data was extracted from the Feedly API and then enriched with information on article text and article key words. See the Data Dictionary for more information on available fields and their meaning. This is the "raw" data that we want to enrich with:
         *   Tags (Bank, County, Sector)
