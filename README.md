@@ -1,4 +1,4 @@
-# iap-datadive-scoping
+# iap-datadive-2018
 Repo for IAP (International Accountability Project) DataDive Project. 
 
 For more information see [Project Page](https://docs.google.com/document/d/1CpjzlksRqPjthfxRK5zENBCcNMRXS9hnTb5S_-WHSr0/edit?ts=5b294a34#heading=h.2gyhe3cbh4ek)
