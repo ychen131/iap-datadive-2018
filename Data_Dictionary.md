@@ -81,6 +81,7 @@ Contact Information    : More text description of contacts for the bank
 ------------------------------
 
 <br>
+
 ## Labeled Data 
 We want to be able to measure the performance of our models/algorithms. Therefore IAP manualy labeled the following datasets. One for each tag, plus one for projects. 
 
